@@ -1,6 +1,6 @@
 # Asteroids Game
 
-This is a simple Asteroids game implemented in Python using the Pygame library.
+This is a simple Asteroids game implemented in Python using the Pygame library, developed for my 5-year-old nephew who really loves destroying asteroids!
 
 ## Prerequisites
 
