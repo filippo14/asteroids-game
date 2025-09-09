@@ -15,7 +15,7 @@ class CircleShape(pygame.sprite.Sprite):
 
     def draw(self, screen):
         # Default draw method - subclasses should override
-        pygame.draw.circle(screen, "white", self.position, self.radius, 2)
+        pygame.draw.circle(screen, "white", self.position, self.radius, DEFAULT_LINE_WIDTH)
 
     def update(self, dt):
         # sub-classes must override
