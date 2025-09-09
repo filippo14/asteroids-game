@@ -3,9 +3,9 @@ Score management module for the Asteroids game.
 Handles loading, saving, and calculating scores.
 """
 import os
-from constants import ASTEROID_MIN_RADIUS
+from constants import *
 
-SCORE_FILE = "high_score.txt"
+SCORE_FILE = "data/high_score.txt"
 
 class ScoreManager:
     def __init__(self):
@@ -14,6 +14,9 @@ class ScoreManager:
     
     def load_high_score(self):
         """Load the high score from file."""
+        # Ensure data directory exists
+        os.makedirs(os.path.dirname(SCORE_FILE), exist_ok=True)
+        
         if os.path.exists(SCORE_FILE):
             try:
                 with open(SCORE_FILE, 'r') as f:

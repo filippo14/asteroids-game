@@ -2,24 +2,6 @@
 
 This is a simple Asteroids game implemented in Python using the Pygame library.
 
-## Project Structure
-
-```
-asteroids-game/
-├── src/                    # Source code directory
-│   ├── main.py            # Main game logic and loop
-│   ├── player.py          # Player spaceship class
-│   ├── asteroid.py        # Asteroid class
-│   ├── asteroidfield.py   # Asteroid spawning system
-│   ├── shot.py            # Bullet/projectile class
-│   ├── circleshape.py     # Base class for circular game objects
-│   └── constants.py       # Game configuration constants
-├── main.py                # Entry point script
-├── requirements.txt       # Python dependencies
-├── high_score.txt         # Persistent high score storage
-└── README.md              # This file
-```
-
 ## Prerequisites
 
 *   Python 3.x
