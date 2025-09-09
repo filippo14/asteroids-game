@@ -77,13 +77,16 @@ class Game:
                 self.score_manager.update_high_score()
                 self.game_state = GameState.GAME_OVER
                 return
-            
-            # Check bullet-asteroid collisions
-            for bullet in self.shots:
+        
+        # Check bullet-asteroid collisions (use copy to avoid modification during iteration)
+        for asteroid in list(self.asteroids):
+            for bullet in list(self.shots):
                 if asteroid.collides_with(bullet):
                     bullet.kill()
-                    asteroid.split()
+                    # Get points BEFORE splitting (which kills the asteroid)
                     self.score_manager.add_points_for_asteroid(asteroid.radius)
+                    asteroid.split()
+                    break  # Exit bullet loop since asteroid is destroyed
     
     def update_gameplay(self, dt):
         """Update game objects during gameplay."""

@@ -24,10 +24,10 @@ This is a simple Asteroids game implemented in Python using the Pygame library.
 ## How to Play
 
 ### Controls
-*   **A** - Rotate spaceship left
-*   **D** - Rotate spaceship right  
-*   **W** - Move forward (thrust)
-*   **S** - Move backward
+*   **LEFT ARROW** - Rotate spaceship left
+*   **RIGHT ARROW** - Rotate spaceship right  
+*   **UP ARROW** - Move forward (thrust)
+*   **DOWN ARROW** - Move backward
 *   **SPACE** - Shoot
 
 ### Game Mechanics

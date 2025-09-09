@@ -12,6 +12,10 @@ class Asteroid(CircleShape):
 
     def update(self, dt):
         self.position += self.velocity * dt
+        
+        # Screen wrapping - wrap around screen edges
+        self.position.x = self.position.x % SCREEN_WIDTH
+        self.position.y = self.position.y % SCREEN_HEIGHT
     
     # Split the asteroid into two smaller asteroids:
     # - Large asteroids will be split into two medium asteroids; 
